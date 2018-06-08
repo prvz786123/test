@@ -1,0 +1,29 @@
+body{
+    background: #eee
+}
+
+.row1{
+    background-color: #ddd;
+    padding: 1%;
+    margin: 1%;
+}
+
+.row{
+    text-align: center;
+}
+
+.maindiv{
+    width: 90%;
+    
+}
+
+.bt{
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+#output{
+    display: none;
+    padding: 2%;
+    margin: 2%;
+}
