@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container maindiv">
+
+       
+            <div class="row  row1">
+                    <div class="form-group col-sm-2">
+                            <h4>Flatcost : </h4><br>
+                            <input id="fc" type="text" placeholder="Flatcost in rupees" class="form-control">
+                        </div>
+                <div class="form-group col-sm-2">
+                    <h4>Carpet Area : </h4><br>
+                    <input id="ca" type="text" placeholder="Area in Sq Mtr" class="form-control">
+                </div>
+                <div class="form-group col-sm-2">
+                    <h4>Enclosed Balcony : </h4><br>
+                    <input id="eb" type="text" placeholder="Area in Sq Mtr" class="form-control">
+                </div>
+                <div class="form-group col-sm-2">
+                    <h4>Elevation Feature : </h4><br>
+                    <input id="ef" type="text" placeholder="Area in Sq Mtr" class="form-control">
+                </div>
+                <div class="form-group col-sm-2">
+                    <h4>Terrace/Patio<br>Pocket Terrace : </h4>
+                    <input id="tp" type="text" placeholder="Area in Sq Mtr" class="form-control">
+                </div>
+                <div class="form-group col-sm-2">
+                        <h4>Floor No : </h4><br>
+                        <Select id="flr" type="text" class="form-control">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+
+                        </Select>
+                    </div>
+               
+                
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-2 bt">
+                    <button class="btn btn-primary" onclick="sdrCalculate()">Calculate</button>
+                </div>
+            </div>
+
+            <div class="row ">
+                    <div id="output" class="alert alert-info">
+                        
+                    </div>
+                </div>
+           
+
+    </div>
+
+<script src="app.js" ></script>
+</body>
+</html>
