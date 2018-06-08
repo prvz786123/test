@@ -1,28 +1,35 @@
     
     function sdrCalculate(){
-        let flatcost=Number(document.getElementById("fc").value);
-        let carpet=Number(document.getElementById("ca").value);
-        let enclosedBalcony=Number(document.getElementById("eb").value);
-        let elevationFeature=Number(document.getElementById("ef").value);
-        let terracePatio=Number(document.getElementById("tp").value);
-        let floor=Number(document.getElementById("flr").value);
+        let flatcost=(document.getElementById("fc").value);
+        let carpet=(document.getElementById("ca").value);
+        let enclosedBalcony=(document.getElementById("eb").value);
+        let elevationFeature=(document.getElementById("ef").value);
+        let terracePatio=(document.getElementById("tp").value);
+        let floor=(document.getElementById("flr").value);
         let output=document.getElementById("output");
-        const rrRate=53100;
+        const rrRate=Number(53100);
         
 
-        if(
-            carpet==""||isNaN(carpet)||
-            enclosedBalcony==""||isNaN(enclosedBalcony)||
-            elevationFeature==""||isNaN(elevationFeature)||
-            terracePatio==""||isNaN(terracePatio)
-        ){
-            alert("Please fill proper areas")
+        
+	if(carpet===""||enclosedBalcony===""||elevationFeature===""||terracePatio==="")
+	{
+            console.log(elevationFeature);
+            
             output.innerHTML="<h3>Please fill proper details</h2>"
             output.style="display:grid;"
             output.className="alert alert-danger"
         }
 
         else{
+
+	    flatcost=Number(document.getElementById("fc").value);
+        carpet=Number(document.getElementById("ca").value);
+        enclosedBalcony=Number(document.getElementById("eb").value);
+        elevationFeature=Number(document.getElementById("ef").value);
+        terracePatio=Number(document.getElementById("tp").value);
+        floor=Number(document.getElementById("flr").value);
+        
+        
 
            carpet+=carpet*10/100;
            carpet+=enclosedBalcony+elevationFeature;
