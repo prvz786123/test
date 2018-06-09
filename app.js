@@ -22,7 +22,7 @@
 
         else{
 
-	    flatcost=Number(document.getElementById("fc").value);
+	flatcost=Number(document.getElementById("fc").value);
         carpet=Number(document.getElementById("ca").value);
         enclosedBalcony=Number(document.getElementById("eb").value);
         elevationFeature=Number(document.getElementById("ef").value);
@@ -30,11 +30,10 @@
         floor=Number(document.getElementById("flr").value);
         
         
-
+           carpet+=elevationFeature;
            carpet+=carpet*10/100;
-           carpet+=enclosedBalcony+elevationFeature;
+           carpet+=enclosedBalcony;
            let mv=carpet*rrRate;
-           terracePatio+=terracePatio*10/100;
            terracePatio*=rrRate*40/100;
 
            mv+=terracePatio;
@@ -75,7 +74,7 @@
         
 
           let stampduty=marketvalue*6/100;
-          stampduty+=100-stampduty%100;
+          stampduty+=500-stampduty%500;
            let registration;
 
            if(marketvalue*1/100>30000){
