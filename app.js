@@ -74,7 +74,8 @@
         
 
           let stampduty=marketvalue*6/100;
-          stampduty+=500-stampduty%500;
+          stampduty+=100-stampduty%100;
+		stampduty+=100;
            let registration;
 
            if(marketvalue*1/100>30000){
