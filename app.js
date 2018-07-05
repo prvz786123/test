@@ -46,7 +46,7 @@
            else if(floor>4&&floor<11){
                mv+=mv*5/100;
            }
-           else if(floor>10&&floor<16){
+           else if(floor>10&&floor<20){
                mv+=mv*10/100;
            }
            else{
