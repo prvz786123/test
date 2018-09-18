@@ -38,7 +38,7 @@
 
            mv+=terracePatio;
 
-           mv+=mv*5/100;
+           mv+=mv*10/100;
 
            if(floor<5){
                
